@@ -1,0 +1,79 @@
+Swapping with third variable:-
+class Main {
+    public static void swapValuesUsingThirdVariable(int m,int n){
+        int temp=m;
+        m=n;
+        n=temp;
+        System.out.println("Value of m is "+m+"and Value of n is"+n);
+    }
+    public static void main(String[] args){
+        int m=9;
+        int n=5;
+        swapValuesUsingThirdVariable(m,n);
+    }
+}
+
+//output:-
+Value of m is 5 and Value of n is 9
+
+Swapping without third variable:-
+class Main {
+    public static void swapValuesWithoutUsingThirdVariable(int[] values){
+        values[0] = values[0] - values[1];
+        // Sum is stored in second variable
+        values[1] = values[0] + values[1];
+        // Difference of 1st from 2nd
+        // is replaced in first variable
+        values[0] = values[1] - values[0];
+    }
+    public static void main(String[] args){
+        int[] values={9,5};
+        swapValuesWithoutUsingThirdVariable(values);
+        System.out.println("Value of m is "+values[0]+"and Value of n is"+values[1]);
+    }
+}
+
+//output:-
+Value of m is 5 and Value of n is 9
+
+input read and print output:-
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args){
+        int num;
+        System.out.println("Enter the integer:");
+        num=sc.nextInt();
+        System.out.println("Entered integer is:"+num);
+    }
+}
+
+//output:-
+Enter the integer:357
+Entered integer is:357
+
+Simple Interest:-
+class Main{
+    public static void main(String[] args){
+        float P=1,R=1,T=1;
+        float SI=(P*T*R)/100;
+        System.out.println("Simple Interest="+SI);
+    }
+}
+
+Compound Interest:-
+class Solution {
+    static int getCompundInterest(int P, int T, int N, int R) {
+        // code here
+        double ratePerPeriod = (double) R / (100 * N);
+
+        // Apply compound interest formula
+        double amount = P * Math.pow(1 + ratePerPeriod, N * T);
+
+        // Return floor of the value
+        return (int) Math.floor(amount);
+    }
+}
+
+//output:-
+1215
