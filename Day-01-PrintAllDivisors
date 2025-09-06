@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+class Main {
+    public static void main(String[] args) {
+        
+        int N=36;
+        
+        ArrayList<Integer> arr=new ArrayList<>();
+        
+        for (int i=1;i<=Math.sqrt(N);i++){
+            if (N%i==0){
+                arr.add(i);
+                
+                if (N/i!=i){
+                    arr.add(N/i);
+                }
+            }
+        }
+        
+        System.out.println("Divisors of "+ N +": "+arr);
+    }
+    
+}
+
+output:-
+Divisors of 36 is: [1,36,2,18,3,12,4,9,6]
