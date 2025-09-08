@@ -1,0 +1,15 @@
+class Main {
+    public static void main(String[] args) {
+        int n=7899;
+        int revNum=0;
+        while (n>0){
+            int digit=n%10;
+            revNum=(revNum*10)+digit;
+            n/=10;
+        }
+        System.out.println("The reverse number is: "+revNum);
+    }
+}
+
+output:-
+The reverse number is: 9987
