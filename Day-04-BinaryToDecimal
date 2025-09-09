@@ -1,0 +1,19 @@
+class Main{
+    public static void main(String[] args){
+        int binary=1011;
+        int decimal=0;
+        int base=1;
+        int temp=binary;
+        
+        while(temp>0){
+            int lastDigit=temp%10;
+            decimal+=lastDigit*base;
+            base*=2;
+            temp/=10;
+        }
+        System.out.println("Binary " + binary + " in Decimal is: " + decimal);
+    }
+}
+
+output:-
+Binary 1011 in Decimal is: 11
