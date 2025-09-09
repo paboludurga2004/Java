@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Main{
+    public static boolean isMagicNumber(int n){
+        int sum=n;
+        while(sum>9){
+             int temp=0;
+             while(sum>0){
+                  sum+=n%10;
+                  sum=sum/10;
+            }
+            sum=temp;
+        }
+        return sum==1;
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int n=sc.nextInt();
+
+        if (isMagicNumber(n)){
+           System.out.println(n + " is a magic number.");
+        }
+        else{
+           System.out.println(n + "is not a magic number.");
+        }
+        sc.close();
+    }
+}
+
+output:-
+Enter a number: 19
+19 is a Magic Number!
