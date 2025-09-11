@@ -1,0 +1,20 @@
+class Main{
+    public static void main(String[] args) {
+        int n = 5; 
+        int last=(char)('A'+n-1);
+        for (int i=0;i<n;i++){
+            for (char ch=(char)(last-i);ch<=last;ch++){
+                System.out.print(ch+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+output:-
+E 
+D E 
+C D E 
+B C D E 
+A B C D E
+
