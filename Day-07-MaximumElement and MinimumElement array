@@ -1,0 +1,35 @@
+class MaximumElementArray {
+    public static void main(String[] args){
+        int[] arr={1,5,10,15,20};
+        int n=arr.length;
+        int max=0;
+        for (int i=0;i<n;i++){
+            if (arr[i]>max){
+               max=arr[i];
+              
+            }
+             
+        }
+        System.out.println("The maximum number is:"+max);
+    }
+}
+
+output:-
+The maximum number is:20
+
+class MinimumElementArray {
+    public static void main(String[] args){
+        int[] arr={1,5,10,15,20};
+        int min=arr[0];
+        int n=arr.length;
+        for (int i=0;i<n;i++){
+            if (arr[i]<min){
+                min+=arr[i];
+            }
+        }
+        System.out.println("The minimum element of array:"+min);
+    }
+}
+
+output:-
+The minimum element of array:1
