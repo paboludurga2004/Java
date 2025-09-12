@@ -1,0 +1,15 @@
+class AverageArry {
+    public static void main(String[] args){
+        int[] arr={1,10,25,30,45};
+        int n=arr.length;
+        int sum=0;
+        for (int i=0;i<n;i++){
+            sum+=arr[i];
+        }
+        int average=sum/n;
+        System.out.println("The average of sum is:"+average);
+    }
+}
+
+output:-
+The average of sum is:22
